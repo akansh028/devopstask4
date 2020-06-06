@@ -4,7 +4,8 @@ kind: Deployment
 metadata:
   name: web-deploy
 spec:
-  replicas:
+  replicas: 3
+  selector:
     matchLabels:
       env: production
   template:
